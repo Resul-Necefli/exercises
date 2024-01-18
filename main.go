@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-
 	defaultn.Compy()
+	defaultn.Red()
 	Reader.Reader()
 
 }
