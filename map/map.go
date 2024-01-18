@@ -1,4 +1,4 @@
-/*
+
 // xeritler map[]
 
 package main
@@ -95,77 +95,68 @@ func main() {
 	}
 
 }
-*/
+
+  
+//--------------------------------------------------------------------------
+
+// MAP  exercises
+
+//---------------------------------------------------------------------------
+
 package main
 
 import "fmt"
 
 func main() {
 
-	// /*
-	// 	key  value
-	// 	`bond_james``shaken, not stirred`, `martinis`, `fast cars`
-	// 	`moneypenny_jenny``intelligence`, `lc`, `computer science`
-	// 	`no_dr``cats`, `ice cream`, `sunsets``  */
+	/*
+		key  value
+		`bond_james``shaken, not stirred`, `martinis`, `fast cars`
+		`moneypenny_jenny``intelligence`, `lc`, `computer science`
+		`no_dr``cats`, `ice cream`, `sunsets``  */
 
-	// film := map[string][]string{
+	film := map[string][]string{
 
-	// 	"bond_james":       {"haken", "not stirred", "martinis", "fast cars"},
-	// 	"moneypenny_jenny": {"intelligence", "intelligence", "computer science"},
-	// 	"no_drcats":        {"ice  kerm", "sunset"},
-	// }
-	// fmt.Println(film)
-	// delete(film, "bond_james")
+		"bond_james":       {"haken", "not stirred", "martinis", "fast cars"},
+		"moneypenny_jenny": {"intelligence", "intelligence", "computer science"},
+		"no_drcats":        {"ice  kerm", "sunset"},
+	}
+	fmt.Println(film)
+	delete(film, "bond_james")
 
-	// for i, v := range film {
-	// 	fmt.Printf("key:%#v values:%#v\n", i, v)
-	// }
-
-	// for i, v := range film {
-
-	// 	fmt.Println(i)
-	// 	for s, d := range v {
-
-	// 		fmt.Println(s, d)
-	// 	}
-
-	// }
-
-	// /*
-
-	// 		key value
-	// 	`fleming_ian` `steaks`, `cigars`, `espionage`
-	// */
-
-	// loopkey := make(map[string][]string)
-
-	// loopkey["fleming_ian"] = []string{"steaks", "cigars", "espionage"}
-	// for i, v := range loopkey {
-	// 	fmt.Println(i, " bura  daxildir asagdaki  filmler")
-
-	// 	for _, d := range v {
-
-	// 		fmt.Println(d)
-	// 	}
-	// }
-
-	// Sample string slice
-	xs := []string{"in", "my", "younger", "and", "more", "vulnerable", "years", "my", "father", "gave", "me", "some", "advice", "that", "i’ve", "been", "turning"}
-
-	// Harita (map) oluştur
-	m := make(map[string]int)
-
-	// Dizi üzerinde döngü
-	for _, v := range xs {
-		// Her kelimenin sayısını artır
-		m[v]++
+	for i, v := range film {
+		fmt.Printf("key:%#v values:%#v\n", i, v)
 	}
 
-	// Haritadaki elemanları yazdır
-	for k, v := range m {
-		fmt.Println(k, v)
+	for i, v := range film {
+
+		fmt.Println(i)
+		for s, d := range v {
+
+			fmt.Println(s, d)
+		}
+
 	}
 
+	/*
+
+			key value
+		`fleming_ian` `steaks`, `cigars`, `espionage`
+	*/
+
+	loopkey := make(map[string][]string)
+
+	loopkey["fleming_ian"] = []string{"steaks", "cigars", "espionage"}
+	for i, v := range loopkey {
+		fmt.Println(i, " bura  daxildir asagdaki  filmler")
+
+		for _, d := range v {
+
+			fmt.Println(d)
+		}
+	}
+
+	
 	x := []string{"in", "my", "younger", "and", "more", "vulnerable", "years", "my", "father", "gave", "me", "some",
 		"advice", "that", "i’ve", "been", "turning", "over", "in", "my", "mind", "ever", "since.", "whenever",
 		"you", "feel", "like", "criticizing", "anyone,", "he", "told", "me,", "just", "remember", "that", "all",
@@ -253,12 +244,18 @@ func main() {
 		"air.", "i", "bought", "a", "dozen", "volumes", "on", "banking", "and", "credit", "and",
 		"investment", "securities,", "and", "they", "stood", "on", "my", "shelf", "in", "red"}
 
+
+		//  yuxardaki  deyerleri    dongu  ile  bir  bir  map  xertimize  elave  ediry ve  o  deyerlerin  adi  acar    sayi  ise  value  deyer  kimi
+		//   qeyd  olunur  artix xeritede
 	ma := map[string]int{}
 
 	for _, v := range x {
 
 		ma[v]++
 	}
+
+	//  burda  biz  artix  xeritemizin  icndeki  deyerleri  ve  acarlari ekrana  yazdiriq buda  bize  her sozu ve  deyeri  olaraqda  o  sozden 
+	//nece  eded  varsa  qarsisinda  yazilacaqdir
 
 	for k, v := range ma {
 		fmt.Println(k, v)
