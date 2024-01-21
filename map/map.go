@@ -245,7 +245,11 @@ func main() {
 		"investment", "securities,", "and", "they", "stood", "on", "my", "shelf", "in", "red"}
 
 
+<<<<<<< HEAD
 		//  yuxardaki  deyerleri    dongu  ile  bir  bir  map  xertimize  elave  ediry ve  o  deyerlerin  adi  acar    sayi  ise  value  deyer  kimi
+=======
+		//  yuxardaki  deyerleri    loop ile  bir  bir  map  xertimize  elave  ediry ve  o  deyerlerin  adi  acar    sayi  ise  value  deyer  kimi
+>>>>>>> b1297a290cf9283afe319d18603148d4e494557c
 		//   qeyd  olunur  artix xeritede
 	ma := map[string]int{}
 
@@ -254,8 +258,13 @@ func main() {
 		ma[v]++
 	}
 
+<<<<<<< HEAD
 	//  burda  biz  artix  xeritemizin  icndeki  deyerleri  ve  acarlari ekrana  yazdiriq buda  bize  her sozu ve  deyeri  olaraqda  o  sozden 
 	//nece  eded  varsa  qarsisinda  yazilacaqdir
+=======
+	//  burada  biz  artix  xeritemizin  icindeki  deyerleri  ve  acarlari ekrana  yazdiririq buda  bize  her sozu ve  deyeri  
+	//  yeni her  sozden  nece  eded  varsa onu  cap  edirik
+>>>>>>> b1297a290cf9283afe319d18603148d4e494557c
 
 	for k, v := range ma {
 		fmt.Println(k, v)
