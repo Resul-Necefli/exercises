@@ -245,11 +245,146 @@ func main() {
 		"investment", "securities,", "and", "they", "stood", "on", "my", "shelf", "in", "red"}
 
 
-<<<<<<< HEAD
+		
+		
 		//  yuxardaki  deyerleri    dongu  ile  bir  bir  map  xertimize  elave  ediry ve  o  deyerlerin  adi  acar    sayi  ise  value  deyer  kimi
-=======
+
 		//  yuxardaki  deyerleri    loop ile  bir  bir  map  xertimize  elave  ediry ve  o  deyerlerin  adi  acar    sayi  ise  value  deyer  kimi
->>>>>>> b1297a290cf9283afe319d18603148d4e494557c
+
+package main
+
+import (
+	"fmt"
+)
+
+type engine struct {
+	motor bool
+}
+
+type car struct {
+	engine
+	model string
+	rengi string
+	sport bool
+	turbo bool
+}
+
+func main() {
+
+	p2 := struct {
+		firs_Name  string
+		friendname map[string]int
+		fovDrinks  []string
+	}{
+		firs_Name: "Orxan",
+		friendname: map[string]int{
+			"Resul Necefli": 24,
+			"Nebi  necefli": 33,
+		},
+		keys: true,
+		name: "Resul  Necefli", // burada  name  var
+
+		fovDrinks: []string{
+			` arax , viski , dublex ,  kanyak ,  su `,
+		},
+	}
+	fmt.Println(p2)
+
+	for i, v := range p2.friendname {
+		fmt.Println(p2.firs_Name, i, v)
+		for _, c := range p2.fovDrinks {
+			fmt.Println(p2.firs_Name, "sevilen ickiler", c)
+
+		}
+	}
+
+	c1 := car{
+		engine: engine{true},
+		model:  "mercedes",
+		rengi:  "qara",
+		sport:  true,
+		turbo:  true,
+	}
+
+	c2 := car{
+		engine: engine{true},
+		model:  "toyoto",
+		rengi:  "qirmizi",
+		sport:  true,
+	}
+
+	fmt.Println(c1.engine, c1.model, c1.motor, c1.sport, c1.turbo, c1.rengi)
+	fmt.Println(c1)
+	fmt.Println(c2.engine, c2.model, c2.motor, c2.sport, c2.turbo, c2.rengi)
+	fmt.Println(c1.engine, c1.model, c1.motor, c1.sport, c1.turbo, c1.rengi)
+
+type engine struct {
+	engene_now string
+}
+
+
+
+package main
+
+import (
+	"fmt"
+)
+
+type office struct {
+	teacher string
+}
+type result struct {
+	firs_Name string
+	last_name string
+	age       int
+	job       bool
+	salary    float32
+	manager   bool
+	office
+}
+
+func main() {
+
+	c := result{"resul necefli", " orxan necefli", 45, true, 525.5, true, office{"orxan"}}
+
+	d := result{
+		firs_Name: "james",
+		last_name: "bond",
+		age:       52,
+		job:       true,
+		salary:    455.2,
+		manager:   true,
+		office:    office{teacher: "ORxan mellim"},
+	}
+	fmt.Println(d)
+	fmt.Println(c)
+
+	var ds result
+	ds.firs_Name = "resul  necefli"
+	ds.last_name = "orxan  necefli"
+	ds.job = true
+
+	fmt.Println(ds)
+
+	e := new(result)
+
+	e = result{
+		firs_Name: "Resul",
+		last_name: "necefli",
+		age:       25,
+		job:       true,
+		salary:    55.3,
+		manager:   false,
+		office:    office{teacher: "Orxan"},
+	}
+
+	fmt.Println(e)
+	fmt.Printf("deyerleri  yazdiraq  %+v\n", e.age)
+
+}
+}
+
+
 		//   qeyd  olunur  artix xeritede
 	ma := map[string]int{}
 
@@ -258,13 +393,14 @@ func main() {
 		ma[v]++
 	}
 
-<<<<<<< HEAD
+	
+	
 	//  burda  biz  artix  xeritemizin  icndeki  deyerleri  ve  acarlari ekrana  yazdiriq buda  bize  her sozu ve  deyeri  olaraqda  o  sozden 
 	//nece  eded  varsa  qarsisinda  yazilacaqdir
-=======
+
 	//  burada  biz  artix  xeritemizin  icindeki  deyerleri  ve  acarlari ekrana  yazdiririq buda  bize  her sozu ve  deyeri  
 	//  yeni her  sozden  nece  eded  varsa onu  cap  edirik
->>>>>>> b1297a290cf9283afe319d18603148d4e494557c
+
 
 	for k, v := range ma {
 		fmt.Println(k, v)
