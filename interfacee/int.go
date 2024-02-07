@@ -1,5 +1,5 @@
 /*interface bir*/
-/*
+
 package main
 
 import "fmt"
@@ -47,11 +47,11 @@ func main() {
 
 }
 
-*/
+
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
 
-/*
+
 package main
 
 import (
@@ -91,7 +91,7 @@ func main() {
 
 }
 
-*/
+
 
 /*`writeLog funksiyası və fmt.Stringer interfeysi:
 
@@ -118,11 +118,11 @@ Nəticədə, writeLogfunksiya fmt.Stringerparametr kimi onun interfeysini həyat
 Bu tip metodu çağıraraq String()sətri əldə edir və bu sətri jurnala yazır.
 Bu, müxtəlif növ sətir təsvirlərini asanlıqla daxil etmək üçün istifadə edilə bilən bir üsuldur.
 
+*/
 
 
 
 
-`*/
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 package main

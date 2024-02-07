@@ -11,6 +11,7 @@ variadic   funksiyalarda   variadic  parametr  mutleq   sonuncu parametr olmalid
 ve bu  funksiyalar  aldigi  deyerleri  oz  daxilene  slice type  formatinda  otrur
 funksiya  daxlinde  yalniz bir  eded  variadik  parametr  ola  biler  diyerleri  adi  bir  aqument  qebul eden  parametr  olur
 */
+//  tester func yardaq
 func tester(r int, s ...string) (string, int) {
 
 	var name string

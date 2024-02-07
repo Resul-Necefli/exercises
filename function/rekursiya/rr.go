@@ -9,7 +9,7 @@ func description(b int) int {
 
 	if b == 0 {
 		return 1
-	}
+	} // faktorial mentiqi ile isleyir
 	// b 4 deyeri  gelir  ve  bura  olur  bele  olur  4 *(4-1) = 4*3   sonraki  deyer  3 *(3-1)
 	return b * description(b-1)
 }
