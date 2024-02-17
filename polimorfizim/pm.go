@@ -34,10 +34,12 @@ type angle4 struct {
 	c float64
 }
 
+// metodumuzu yarddaq
 func (a angle3) ecar() float64 {
 	return a.a * a.h
 }
 
+// eyni adli metoddan yene istfade  edrik
 func (a angle4) ecar() float64 {
 	return a.b * a.c
 }
@@ -54,3 +56,9 @@ func main() {
 	interfacefunc(add, aff)
 
 }
+
+/*
+polmorfizimin yaxsi terefi odurki meslen menim iki structum var ve  onlar  eyni iterface referans edirler amma  hersinin bir metodu var  ve  ferqli
+menim  bu interface islemeycek cunki o metodun   herbirinin   bu structlarin    herbirnde  2 sinde olmasini isdycek yen
+orxan ve resul  struct var  bularinda add()   sdd()  metodlari   burada  bu metodun herkisi hem  resulda   hemde orxanda  olmalidir polimorfizim bunun onune kecir
+*/

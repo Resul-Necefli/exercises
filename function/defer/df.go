@@ -17,7 +17,7 @@ func main() {
 	   her  hansi  bir  fayil  aciriq   os.open   ve  ya  database  qosularken baglanti  yaradarken   biz
 	   bezi  emliyatlari  baglamali  oluruq  acdigimiz  fayl  kimi    ve  bu  kimi  emliyatlarin  sonda  olmasini
 	   yeni func  icndeki  en  sonuncu  emliyat  olaraq  yerine  yetirlmesini  isdeyirkse  o  zaman  biz  burada   DEFER   ifadesini istfade
-	   etmeliyik
+	   etmeliyik.
 
 	*/
 	defer foo()
