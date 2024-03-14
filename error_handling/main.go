@@ -36,7 +36,7 @@ func main() {
 	log.SetOutput(telskop)
 	//burada olmayan fayliacaraq biz sehv mesajni aliriq ve bunu muxtelif metodlardan istfade ederek ekrana gonedrmis oluruq
 	// bu metodlarin ferqlerine baxaq
-	_, err := os.Open("sdd.txt")
+	_, err = os.Open("sdd.txt")
 	if err != nil {
 
 		log.Fatal(err)   // proqrami Exit 1 cixisi ile sonlandirir ve bize sehvin tarixi baresinde melumat verir

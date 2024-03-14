@@ -65,6 +65,7 @@ type person struct {
 	errr      error
 }
 
+// Error() herbir nov   error interfaysini islede biler bu bizim sehflerimiz haqda dahada yaxsi melumat vere bilmeyimizin bi yoludur sadece
 func (p *person) Error() string {
 
 	return fmt.Sprintf("name:   last_name:  %v  %v  %v\n ", p.last_name, p.name, p.errr)

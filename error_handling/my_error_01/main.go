@@ -11,6 +11,10 @@ func main() {
 	fmt.Println(err, dd)
 }
 
+/*sehvlerin idare edilmsine baxsaq goreriki onlarda deyerler kimi mueyyyen bir deyisknlerde saxlanila biler buda   daha cox tekrarin
+qarsisini alir ve sehvimizin idare edilmesini idomatik hala getirir bununla bagli bu kod parcasina baxa bilerik  burada verilen iki misalda
+biz oz  struc novmuzu ve onlara Error() metodumuzu elave ederek error interfacesini heyata keciririk */
+
 var ErrorMentor = &result{name: "xxxx", username: "xxxx", err: errors.New("not negatif number")}
 
 type result struct {
